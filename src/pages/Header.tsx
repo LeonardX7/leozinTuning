@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Logo from "../assets/logo.svg"
+import Menu from "../assets/menu.svg"
+import Close from "../assets/close.svg"
 import "../styles/header.css";
 import "../styles/utility.css";
 import Button from "../components/Button";
@@ -9,7 +11,7 @@ export default function Header() {
 
     return (
         <>
-            <header className="container py-sm">
+            <header className="container py-sm" style={{ backgroundColor: "#191919"}}>
                 <nav className="flex items-center justify-between">
                     <img src={Logo} alt="Logo DonaFrost" width={220} height={80} />
                     <div className="desktop-only">
@@ -57,13 +59,21 @@ export default function Header() {
                                         <li>
                                             <a href="#contact">Contato</a>
                                         </li>
+                                        <li>
+                                            <a href="#login">Login</a>
+                                        </li>
+                                        <li>
+                                            <a href="#register" style={{color: "--text-color"}}>Cadastre-se</a>
+                                        </li>
                                     </ul>
                                     <span onClick={() => setShowMobileMenu(!showMobileMenu)} className="btn-wrapper">
+                                        <img src={Close} alt="ícone fechar menu" width={24} height={24} />
                                     </span>
                                 </div>
                             </div>
                             :
                             <span onClick={() => setShowMobileMenu(!showMobileMenu)} className="btn-wrapper" >
+                                <img src={Menu} alt="ícone menu" width={24} height={24} />
                             </span>
                         }
                     </div>
