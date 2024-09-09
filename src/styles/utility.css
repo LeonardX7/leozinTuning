@@ -54,8 +54,7 @@
 
 @media (width >= 1280px) {
     .container {
-        padding-left: 0.50%;
-        padding-right: 0.50%;
+        --max-width: 1050px;
     }
 
     .desktop-only {
