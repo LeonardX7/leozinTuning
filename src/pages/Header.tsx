@@ -11,7 +11,7 @@ export default function Header() {
 
     return (
         <>
-            <header className="container py-sm" style={{ backgroundColor: "#191919"}}>
+            <header className="container py-sm">
                 <nav className="flex items-center justify-between">
                     <img src={Logo} alt="Logo DonaFrost" width={220} height={80} />
                     <div className="desktop-only">
@@ -60,10 +60,7 @@ export default function Header() {
                                             <a href="#contact">Contato</a>
                                         </li>
                                         <li>
-                                            <a href="#login">Login</a>
-                                        </li>
-                                        <li>
-                                            <a href="#register" style={{color: "--text-color"}}>Cadastre-se</a>
+                                            <a className="reverse-color" href="#">Login</a>
                                         </li>
                                     </ul>
                                     <span onClick={() => setShowMobileMenu(!showMobileMenu)} className="btn-wrapper">
