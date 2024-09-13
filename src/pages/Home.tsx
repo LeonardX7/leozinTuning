@@ -4,6 +4,7 @@ import HeroRectangleOne from "../assets/images/Rectangle 13.png";
 import HeroRectangleTwo from "../assets/images/Rectangle 14.png";
 import "../styles/hero.css";
 import Button from "../components/Button";
+import Product from "../components/Product";
 
 
 export default function Home() {
@@ -28,8 +29,8 @@ export default function Home() {
                         </span>
                     </div>
                 </div>
-
             </section>
+            <Product />
         </>
     )
 }
