@@ -1,13 +1,13 @@
-import { useState } from "react";
 import Logo from "../assets/logo.svg"
 import Menu from "../assets/menu.svg"
 import Close from "../assets/close.svg"
 import "../styles/header.css";
 import "../styles/utility.css";
 import Button from "../components/Button";
+import { useMobileMenu } from "../Context/ContextMobileMenu";
 
 export default function Header() {
-    const [showMobileMenu, setShowMobileMenu] = useState(false);
+    const { showMobileMenu, setShowMobileMenu } = useMobileMenu();
 
     return (
         <>

@@ -1,8 +1,12 @@
 import "../styles/product.css";
 import Turbo from "../assets/turbo.svg";
+import { useMobileMenu } from "../Context/ContextMobileMenu";
 
 export default function Product() {
+  const { showMobileMenu } = useMobileMenu();
+  
   return (
+    !showMobileMenu &&
     <div className="solution-container">
       <h3 className="section-title">Produtos</h3>
       <h2 className="solution-heading">Sob medida para você</h2>
