@@ -3,9 +3,12 @@ import Header from "./Header"
 import HeroRectangleOne from "../assets/images/Rectangle 13.png";
 import HeroRectangleTwo from "../assets/images/Rectangle 14.png";
 import "../styles/hero.css";
+import "../styles/carousel.css";
 import Button from "../components/Button";
 import Product from "../components/Product";
-
+import testimonial1 from "../assets/images/testimonial1.png"
+import Carousel from "../components/Carousel";
+import Plans from "../components/Plans";
 
 export default function Home() {
     return (
@@ -31,6 +34,65 @@ export default function Home() {
                 </div>
             </section>
             <Product />
+            <section id="testimonials">
+                <header>
+                    <span>
+                        <p className="desktop-only">Conselho de quem conhece</p>
+                        <h2>Cada cliente importa!</h2>
+                    </span>
+                    <p>
+                        Quem já pediu sabe da qualidade das nossas receitas, estamos tirando aquela ideia de que
+                        comida congelada tem de ser algo sem gosto, acompanhe abaixo os testemunhos de quem já comprou e aprovou.
+                    </p>
+                </header>
+                <div className="carousel">
+                    <div className="carousel-content">
+                        <Carousel
+                            image={testimonial1}
+                            testimonial="véri naice"
+                            name="Elon Mosca"
+                            desc="Big Fan of Alexandre"
+                        />
+                        <Carousel
+                            image={testimonial1}
+                            testimonial="véri naice"
+                            name="Elon Mosca"
+                            desc="Big Fan of Alexandre"
+                        />
+                        <Carousel
+                            image={testimonial1}
+                            testimonial="véri naice"
+                            name="Elon Mosca"
+                            desc="Big Fan of Alexandre"
+                        />
+                        <Carousel
+                            image={testimonial1}
+                            testimonial="véri naice"
+                            name="Elon Mosca"
+                            desc="Big Fan of Alexandre"
+                        />
+                        <Carousel
+                            image={testimonial1}
+                            testimonial="véri naice"
+                            name="Elon Mosca"
+                            desc="Big Fan of Alexandre"
+                        />
+                        <Carousel
+                            image={testimonial1}
+                            testimonial="véri naice"
+                            name="Elon Mosca"
+                            desc="Big Fan of Alexandre"
+                        />
+                        <Carousel
+                            image={testimonial1}
+                            testimonial="véri naice"
+                            name="Elon Mosca"
+                            desc="Big Fan of Alexandre"
+                        />
+                    </div>
+                </div>
+            </section>
+            <Plans/>
         </>
     )
 }
