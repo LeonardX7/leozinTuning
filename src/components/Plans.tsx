@@ -6,37 +6,37 @@ export default function Plans() {
         <section id="pricing" className="container">
             <header>
                 <p className="desktop-only">Planos e preços</p>
-                <h2>Nossos planos</h2>
+                <h2>Nossos planos de turbos</h2>
             </header>
             <section className="even-columns gap-1.5">
                 <div className="pricing-card">
                     <span className="plan">
                         <h3>Básico</h3>
-                        <p>Você tem direito a uma prova das comidas DonaFrost.</p>
-                    </span><h2>Grátis</h2><Button text="Pedir agora" secondary key="free" /><span className="hr" /><span className="features">
+                        <p>Você tem direito a uma turbina básica para seu carro.</p>
+                    </span><h2>R$ 999,90</h2><Button text="Comprar agora" secondary key="basic" /><span className="hr" /><span className="features">
                         <img alt="ícone check" width={24} height={24} />
-                        <p>Retire na loja</p>
+                        <p>Instalação não inclusa</p>
                     </span><span className="features">
                         <img alt="ícone check" width={24} height={24} />
-                        <p>Apenas 1 por CPF</p>
+                        <p>Garantia de 6 meses</p>
                     </span>
                 </div>
                 <div className="pricing-card premium">
-                    <span className="bonus"><p>1º MÊS COM DESCONTO</p></span><span className="plan">
+                    <span className="bonus"><p>OFERTA ESPECIAL</p></span><span className="plan">
                         <h3>Premium</h3>
-                        <p>Para quem precisa de uma marmita diária, muito saborosa.</p>
+                        <p>Para quem quer transformar seu carro em um verdadeiro avião.</p>
                     </span><span className="price">
-                        <h2>R$ 89,90</h2>
-                        <p>/mês</p>
-                    </span><Button text="Pedir agora" key="premium" /><span className="hr" /><span className="features">
+                        <h2>R$ 2.499,90</h2>
+                        <p>/unidade</p>
+                    </span><Button text="Comprar agora" key="premium" /><span className="hr" /><span className="features">
                         <img alt="ícone check" width={24} height={24} />
-                        <p>2 Entregas</p>
+                        <p>Instalação inclusa</p>
                     </span><span className="features">
                         <img alt="ícone check" width={24} height={24} />
-                        <p>5 Refeições por semana</p>
+                        <p>Garantia de 2 anos</p>
                     </span><span className="features">
                         <img alt="ícone check" width={24} height={24} />
-                        <p>2 Sucos por semana</p>
+                        <p>Aumento de potência garantido</p>
                     </span>
                 </div>
             </section>

@@ -9,6 +9,7 @@ import Product from "../components/Product";
 import testimonial1 from "../assets/images/testimonial1.png"
 import Carousel from "../components/Carousel";
 import Plans from "../components/Plans";
+import Contact from "../components/Contact";
 
 export default function Home() {
     return (
@@ -38,11 +39,11 @@ export default function Home() {
                 <header>
                     <span>
                         <p className="desktop-only">Conselho de quem conhece</p>
-                        <h2>Cada cliente importa!</h2>
+                        <h2>Nossos clientes são os melhores!</h2>
                     </span>
                     <p>
-                        Quem já pediu sabe da qualidade das nossas receitas, estamos tirando aquela ideia de que
-                        comida congelada tem de ser algo sem gosto, acompanhe abaixo os testemunhos de quem já comprou e aprovou.
+                        Quem já comprou sabe da qualidade das nossas turbinas, estamos tirando aquela ideia de que
+                        turbos são perigosos, acompanhe abaixo os testemunhos de quem já comprou e aprovou.
                     </p>
                 </header>
                 <div className="carousel">
@@ -93,6 +94,7 @@ export default function Home() {
                 </div>
             </section>
             <Plans/>
+            <Contact/>
         </>
     )
 }
