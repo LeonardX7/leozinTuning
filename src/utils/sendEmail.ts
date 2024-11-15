@@ -1,4 +1,4 @@
-export async function sendEmail(fromEmail: string, content: string): Promise<void> {
+export async function sendEmail(toEmail: string, content: string): Promise<void> {
   const url = "https://us-central1-projeto-arch-labda.cloudfunctions.net/teste";
 
   try {
@@ -9,7 +9,7 @@ export async function sendEmail(fromEmail: string, content: string): Promise<voi
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from_email: fromEmail,
+        to_email: toEmail,
         content: content,
       }),
     });
@@ -21,5 +21,6 @@ export async function sendEmail(fromEmail: string, content: string): Promise<voi
     console.log("E-mail enviado com sucesso!");
   } catch (error) {
     console.error("Erro ao enviar a requisição:", error);
+    throw error;
   }
 }

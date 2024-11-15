@@ -10,6 +10,7 @@ import testimonial1 from "../assets/images/testimonial1.png"
 import Carousel from "../components/Carousel";
 import Plans from "../components/Plans";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 export default function Home() {
     return (
@@ -95,6 +96,7 @@ export default function Home() {
             </section>
             <Plans/>
             <Contact/>
+            <Footer/>
         </>
     )
 }

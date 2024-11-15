@@ -1,5 +1,6 @@
 import Button from "./Button";
 import "../styles/plans.css"
+import check from "../assets/images/check.png"
 
 export default function Plans() {
     return (
@@ -14,10 +15,10 @@ export default function Plans() {
                         <h3>Básico</h3>
                         <p>Você tem direito a uma turbina básica para seu carro.</p>
                     </span><h2>R$ 999,90</h2><Button text="Comprar agora" secondary key="basic" /><span className="hr" /><span className="features">
-                        <img alt="ícone check" width={24} height={24} />
+                        <img src={check} alt="ícone check" width={24} height={24} />
                         <p>Instalação não inclusa</p>
                     </span><span className="features">
-                        <img alt="ícone check" width={24} height={24} />
+                        <img src={check} alt="ícone check" width={24} height={24} />
                         <p>Garantia de 6 meses</p>
                     </span>
                 </div>
@@ -29,13 +30,13 @@ export default function Plans() {
                         <h2>R$ 2.499,90</h2>
                         <p>/unidade</p>
                     </span><Button text="Comprar agora" key="premium" /><span className="hr" /><span className="features">
-                        <img alt="ícone check" width={24} height={24} />
+                        <img src={check} alt="ícone check" width={24} height={24} />
                         <p>Instalação inclusa</p>
                     </span><span className="features">
-                        <img alt="ícone check" width={24} height={24} />
+                        <img src={check} alt="ícone check" width={24} height={24} />
                         <p>Garantia de 2 anos</p>
                     </span><span className="features">
-                        <img alt="ícone check" width={24} height={24} />
+                        <img src={check} alt="ícone check" width={24} height={24} />
                         <p>Aumento de potência garantido</p>
                     </span>
                 </div>
