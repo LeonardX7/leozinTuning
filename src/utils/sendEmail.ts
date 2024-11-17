@@ -1,12 +1,13 @@
 export async function sendEmail(toEmail: string, content: string): Promise<void> {
-  const url = "https://us-central1-projeto-arch-labda.cloudfunctions.net/teste";
+
+  const token = "token"
 
   try {
-    const response = await fetch(url, {
+    const response = await fetch('api', {
       method: "POST",
-      mode: "cors",
       headers: {
         "Content-Type": "application/json",
+        "Authorization": `Bearer ${token}`,
       },
       body: JSON.stringify({
         to_email: toEmail,
